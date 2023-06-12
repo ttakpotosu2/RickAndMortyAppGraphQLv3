@@ -1,0 +1,13 @@
+query Locations($page: Int) {
+    locations(page: $page){
+        results {
+            id
+            name
+            dimension
+            type
+            residents {
+                id
+            }
+        }
+    }
+}
